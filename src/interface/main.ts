@@ -38,6 +38,7 @@ function createActivityCard(activity: Activity): HTMLElement {
   const removeButton = document.createElement("button");
   removeButton.type = "button";
   removeButton.textContent = "Eliminar";
+  removeButton.className = "btn btn-danger";
   // agregar clase
   removeButton.addEventListener("click", () => {
     activities.remove(activity);
